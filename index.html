@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Збільшення фото</title>
+<style>
+.container {
+  max-width: 100%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="./images/Rectangle 43.svg" id="photo" alt="Photo">
+  </div>
+  <script>
+    var photo = document.getElementById('photo');
+    photo.addEventListener('click', function() {
+      if (photo.style.width === '100%') {
+        photo.style.width = 'auto';
+      } else {
+        photo.style.width = '100%';
+      }
+    });
+  </script>
+</body>
+</html>
